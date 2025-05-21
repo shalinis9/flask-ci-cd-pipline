@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git 'https://github.com/shalinis9/flask-ci-cd-pipline.git'
+                git branch: 'main', url: 'https://github.com/shalinis9/flask-ci-cd-pipline.git'
 
             }
         }
